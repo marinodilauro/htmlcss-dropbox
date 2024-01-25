@@ -1,3 +1,5 @@
+/* #region Utilities */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,100 @@
   --dropbox-accent: rgba(0, 97, 255, 1);
 }
 
+/* #endregion Utilities */
+
+/* #region Common rules */
+
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
 }
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* #region Flex rules */
+.d_flex {
+  display: flex;
+}
+
+.flex_mirror {
+  flex-direction: row-reverse;
+}
+
+.items_center {
+  justify-content: center;
+  align-items: center;
+}
+
+.space_between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_spacing {
+  gap: 2rem;
+}
+
+/* #endregion Flex rules */
+
+.bg_color_lighter {
+  background-color: var(--dropbox-lighter);
+}
+
+.background {
+  width: 100%;
+}
+
+.container_large {
+  width: 98%;
+  max-width: 1900px;
+  margin: auto;
+}
+
+.container_small {
+  width: 685px;
+  margin: auto;
+}
+
+.links {
+  list-style: none;
+  justify-content: space-around;
+}
+
+.links a {
+  color: var(--dropbox-dark);
+}
+
+.btn {
+  border: none;
+  background-color: var(--dropbox-accent);
+  color: var(--dropbox-lighter);
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+
+/* #endregion Common rules */
+
+/* #region Debug */
+
+#site_header {
+  height: 50px;
+}
+
+/* #endregion Debug */
+
+/* #region Header */
+/* #endregion Header */
+
+/* #region Main */
+/* #endregion Main */
+
+/* #region Footer */
+/* #endregion Footer */
