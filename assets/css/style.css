@@ -126,20 +126,20 @@ a {
   border: 1px dashed;
 }
 
-.section_300px {
+.section_510px {
   height: 300px;
 }
 
-.section_400px {
-  height: 400px;
+.section_680px {
+  height: 680px;
 }
 
-.section_500px {
-  height: 500px;
+.section_850px {
+  height: 850px;
 }
 
-.section_1000px {
-  height: 1000px;
+.section_1700px {
+  height: 1700px;
 }
 
 .container_4 {
