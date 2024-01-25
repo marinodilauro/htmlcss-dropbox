@@ -109,24 +109,20 @@ img {
 .container_medium {
   width: 1200px;
   margin: auto;
-  padding-top: 5rem;
-  padding-bottom: 2.5rem;
 }
 
 .container_small {
   width: 1000px;
   margin: auto;
-  padding-top: 5rem;
-  padding-bottom: 2.5rem;
 }
 
-.banner+.container_small {
-  margin-top: 2.5rem;
+.padding_top_bottom {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .links {
   list-style: none;
-  justify-content: space-around;
 }
 
 .links a {
@@ -187,7 +183,7 @@ input[type="radio"]+label {
 }
 
 #site_footer * {
-  border: 1px dashed;
+  /* border: 1px dashed; */
 }
 
 .section_510px {
@@ -212,8 +208,6 @@ input[type="radio"]+label {
 
 .container_2 {
   width: calc((100% / 12) * 2.4);
-  height: 425px;
-  background-color: lightgreen;
 }
 
 .container_3 {
@@ -244,11 +238,14 @@ input[type="radio"]+label {
   background-color: lightcoral;
 }
 
-
-
 /* #endregion Debug */
 
 /* #region Header */
+
+#site_header .links {
+  justify-content: space-around;
+}
+
 
 .header_left .btn {
   background-color: var(--dropbox-accent);
@@ -267,6 +264,10 @@ input[type="radio"]+label {
 /* #endregion Banner */
 
 /* #region Business plan */
+.banner+.container_small {
+  padding-top: 10rem;
+}
+
 .radio_buttons {
   padding-bottom: 4rem;
 }
@@ -369,7 +370,28 @@ input[type="radio"]+label {
   padding: 9rem 0;
 }
 
+.footer_top .links li {
+  color: var(--dropbox-lighter);
+  padding-bottom: 1rem;
+}
+
+.footer_top .links a {
+  color: var(--dropbox-lighter);
+}
+
+.footer_top li:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.footer_top+hr {
+  width: 10%;
+}
+
 .site_language {
+  align-items: baseline;
+  gap: 0.5rem;
   padding: 3rem 0;
 }
 
