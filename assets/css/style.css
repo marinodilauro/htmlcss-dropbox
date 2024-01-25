@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --dropbox-dark: rgba(0, 0, 0, 1);
+  --dropbox-light: rgba(180, 208, 231, 1);
+  --dropbox-lighter: rgba(255, 255, 255, 1);
+  --dropbox-accent: rgba(0, 97, 255, 1);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
