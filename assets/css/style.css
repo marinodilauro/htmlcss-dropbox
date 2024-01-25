@@ -181,12 +181,15 @@ a {
   background-color: lightyellow;
 }
 
+.dropbox_partner .container_8 {
+  height: 540px;
+}
+
 .container_9 {
   width: calc((100% / 12) * 9);
   height: 425px;
   background-color: lightyellow;
 }
-
 
 /* #endregion Debug */
 
