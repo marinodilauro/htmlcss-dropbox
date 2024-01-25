@@ -181,6 +181,12 @@ a {
   background-color: lightyellow;
 }
 
+.container_9 {
+  width: calc((100% / 12) * 9);
+  height: 425px;
+  background-color: lightyellow;
+}
+
 
 /* #endregion Debug */
 
@@ -189,9 +195,20 @@ a {
 
 /* #region Main */
 
+/* #region Banner */
 .banner .container_medium {
   margin-bottom: -5rem;
 }
+
+/* #endregion Banner */
+
+/* #region Sales office */
+.team_icon {
+  text-align: center;
+  padding: 0.7rem 0;
+}
+
+/* #endregion Sales office */
 
 /* #endregion Main */
 
