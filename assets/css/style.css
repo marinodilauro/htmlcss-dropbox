@@ -89,6 +89,7 @@ img {
 
 .bg_color_dark {
   background-color: var(--dropbox-dark);
+  color: var(--dropbox-lighter);
 }
 
 .bg_color_light {
@@ -207,6 +208,12 @@ input[type="radio"]+label {
 
 .section_1700px {
   height: 1700px;
+}
+
+.container_2 {
+  width: calc((100% / 12) * 2.4);
+  height: 425px;
+  background-color: lightgreen;
 }
 
 .container_3 {
@@ -353,4 +360,17 @@ input[type="radio"]+label {
 /* #endregion Main */
 
 /* #region Footer */
+
+#site_footer .container_medium {
+  padding: 0;
+}
+
+.footer_top {
+  padding: 9rem 0;
+}
+
+.site_language {
+  padding: 3rem 0;
+}
+
 /* #endregion Footer */
