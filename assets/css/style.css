@@ -258,6 +258,7 @@ input[type="radio"]+label {
 
 /* #region Banner */
 .banner .container_medium {
+  padding-bottom: 0;
   margin-bottom: -5rem;
 }
 
@@ -363,11 +364,11 @@ input[type="radio"]+label {
 /* #region Footer */
 
 #site_footer .container_medium {
-  padding: 0;
+  padding-top: 6rem;
 }
 
 .footer_top {
-  padding: 9rem 0;
+  padding-bottom: 6rem;
 }
 
 .footer_top .links li {
