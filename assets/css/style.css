@@ -100,6 +100,42 @@ a {
   height: 50px;
 }
 
+#site_main * {
+  border: 1px dashed;
+}
+
+#site_footer * {
+  border: 1px dashed;
+}
+
+.section_300px {
+  height: 300px;
+}
+
+.section_400px {
+  height: 400px;
+}
+
+.section_500px {
+  height: 500px;
+}
+
+.section_1000px {
+  height: 1000px;
+}
+
+.bg_color_dark {
+  background-color: var(--dropbox-dark);
+}
+
+.bg_color_lighter {
+  background-color: var(--dropbox-lighter);
+}
+
+.bg_color_light {
+  background-color: var(--dropbox-light);
+}
+
 /* #endregion Debug */
 
 /* #region Header */
