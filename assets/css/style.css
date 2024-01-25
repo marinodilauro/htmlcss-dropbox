@@ -10,6 +10,8 @@
   --dropbox-dark: rgba(0, 0, 0, 1);
   --dropbox-light: rgba(180, 208, 231, 1);
   --dropbox-lighter: rgba(255, 255, 255, 1);
+  --dropbox-accent: rgba(0, 97, 255, 1);
+  --dropbox-free_trial_font: rgba(97, 8, 43, 1);
   --dropbox-designit_logo: rgba(162, 211, 155, 1);
   --dropbox-asu_logo: rgba(97, 8, 43, 1);
   --dropbox-uf_logo: rgba(0, 147, 206, 1);
@@ -38,7 +40,6 @@ h1 {
 h2 {
   font-size: 2.25rem;
   padding-bottom: 4rem;
-  ;
 }
 
 img {
@@ -135,8 +136,7 @@ img {
 
 .btn {
   border: none;
-  background-color: var(--dropbox-accent);
-  color: var(--dropbox-lighter);
+  font-size: 1.1rem;
   padding: 0.4rem 0.8rem;
   cursor: pointer;
 }
@@ -194,7 +194,7 @@ input[type="radio"]+label {
 .container_4 {
   width: calc((100% / 12) * 4);
   height: 425px;
-  background-color: lightslategray;
+  background-color: lightblue;
 }
 
 .container_8 {
@@ -210,7 +210,64 @@ input[type="radio"]+label {
 .container_9 {
   width: calc((100% / 12) * 9);
   height: 425px;
-  background-color: lightyellow;
+  background-color: lightcoral;
+}
+
+
+
+/* #endregion Debug */
+
+/* #region Header */
+
+.header_left .btn {
+  background-color: var(--dropbox-accent);
+  color: var(--dropbox-lighter);
+}
+
+/* #endregion Header */
+
+/* #region Main */
+
+/* #region Banner */
+.banner .container_medium {
+  margin-bottom: -5rem;
+}
+
+/* #endregion Banner */
+
+/* #region Business plan */
+.radio_buttons {
+  padding-bottom: 4rem;
+}
+
+/* #endregion Business plan */
+
+/* #region Sales office */
+.team_icon {
+  text-align: center;
+  padding: 0.7rem 0;
+}
+
+/* #endregion Sales office */
+
+/* #region Customers title */
+.container_small.customers_title {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+/* #endregion Customers title */
+
+/* #region Customers logo */
+.logo_right,
+.logo_center,
+.logo_left {
+  width: calc(100% / 3);
+}
+
+.customers_logo img {
+  color: var();
+  width: 50%;
 }
 
 .logo_right div,
@@ -250,60 +307,20 @@ input[type="radio"]+label {
   background-color: var(--dropbox-clearchannel_logo);
 }
 
-/* #endregion Debug */
-
-/* #region Header */
-
-/* #endregion Header */
-
-/* #region Main */
-
-/* #region Banner */
-.banner .container_medium {
-  margin-bottom: -5rem;
-}
-
-/* #endregion Banner */
-
-/* #region Business plan */
-
-.radio_buttons {
-  padding-bottom: 4rem;
-}
-
-/* #endregion Business plan */
-
-/* #region Sales office */
-.team_icon {
-  text-align: center;
-  padding: 0.7rem 0;
-}
-
-/* #endregion Sales office */
-
-/* #region Customers title */
-
-.container_small.customers_title {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-/* #endregion Customers title */
-
-/* #region Customers logo */
-
-.logo_right,
-.logo_center,
-.logo_left {
-  width: calc(100% / 3);
-}
-
-.customers_logo img {
-  color: var();
-  width: 50%;
-}
-
 /* #endregion Customers logo */
+
+/* #region Free trial */
+.free_trial h2 {
+  color: var(--dropbox-free_trial_font);
+}
+
+.free_trial .btn {
+  background-color: var(--dropbox-lighter);
+  color: var(--dropbox-dark);
+  padding: 0.7rem 3rem;
+}
+
+/* #endregion Free trial */
 
 /* #endregion Main */
 
