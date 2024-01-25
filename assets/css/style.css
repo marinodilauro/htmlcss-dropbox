@@ -26,9 +26,8 @@
 
 /* #region Common rules */
 
-body {
+body * {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
   font-size: 1.1rem;
 }
 
@@ -148,6 +147,31 @@ img {
 input[type="radio"]+label {
   padding-right: 4rem;
 }
+
+.accordion {
+  background-color: var(--dropbox-lighter);
+  color: var(--dropbox-dark);
+  font-weight: bold;
+  padding: 2rem 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  transition: 0.4s;
+}
+
+.fa-chevron-down {
+  padding-right: 2rem;
+}
+
+.faq_answer {
+  background-color: var(--dropbox-lighter);
+  color: var(--dropbox-dark);
+  padding: 0 2rem;
+  display: none;
+  overflow: hidden;
+}
+
 
 /* #endregion Common rules */
 
@@ -321,6 +345,10 @@ input[type="radio"]+label {
 }
 
 /* #endregion Free trial */
+
+/* #region FAQ */
+
+/* #endregion FAQ */
 
 /* #endregion Main */
 
