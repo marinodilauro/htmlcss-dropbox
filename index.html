@@ -17,14 +17,14 @@
 
   <!-- Header -->
 
-  <header id="site_header" class="background bg_color_lighter d_flex items_center">
+  <header id="site_header" class="background bg_color_lighter d_flex flex_items_center">
 
-    <div class="container_large d_flex space_between">
+    <div class="container_large d_flex flex_space_between">
 
       <div class="header_right d_flex flex_spacing">
         <img src="./assets/img/logo-small.png" alt="">
 
-        <ul class="links d_flex items_center flex_spacing">
+        <ul class="links d_flex flex_items_center flex_spacing">
           <li><a href="#">Perch&egrave; Dropbox</a></li>
           <li><a href="#">Funzioni</a></li>
           <li><a href="#">Piani e Prezzi</a></li>
@@ -48,6 +48,7 @@
 
   <main id="site_main">
 
+    <!-- Banner -->
     <div class="banner d_flex bg_color_light">
       <div class="container_medium d_flex flex_column">
         <section>
@@ -59,7 +60,37 @@
         </section>
       </div>
     </div>
-    <div class="business_plan section_1000px"></div>
+
+    <!-- Business plans -->
+    <div class="container_small section_1000px">
+      <section class="business_plan d_flex flex_column flex_spacing">
+        <h2>Trova il piano business che fa per te</h2>
+        <div class="radio_buttons d_flex">
+          <input type="radio" id="monthly" name="payment_plan" value="Fatturazione mensile">
+          <label for="monthly">Fatturazione mensile</label><br>
+          <input type="radio" id="annual" name="payment_plan" value="Fatturazione annuale">
+          <label for="annual">Fatturazione annuale</label><br>
+        </div>
+        <div class="row d_flex flex_spacing flex_items_center flex_wrap">
+          <div class="container_3"></div>
+          <div class="container_3"></div>
+          <div class="container_3"></div>
+          <div class="container_3"></div>
+          <div class="container_3"></div>
+          <div class="container_3"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sales office -->
+
+    <div class="container_small section_510px">
+      <div class="sales_office d_flex flex_column">
+
+      </div>
+    </div>
+
+
     <div class="dropbox_partner section_850px"></div>
     <div class="dropbox_business section_1700px"></div>
     <div class="customers_title section_680px"></div>
