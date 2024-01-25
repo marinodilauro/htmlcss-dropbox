@@ -10,7 +10,14 @@
   --dropbox-dark: rgba(0, 0, 0, 1);
   --dropbox-light: rgba(180, 208, 231, 1);
   --dropbox-lighter: rgba(255, 255, 255, 1);
-  --dropbox-accent: rgba(0, 97, 255, 1);
+  --dropbox-designit_logo: rgba(162, 211, 155, 1);
+  --dropbox-asu_logo: rgba(97, 8, 43, 1);
+  --dropbox-uf_logo: rgba(0, 147, 206, 1);
+  --dropbox-topps_logo: rgba(255, 28, 28, 1);
+  --dropbox-wbr_logo: rgba(213, 0, 31, 1);
+  --dropbox-hearst_logo: rgba(180, 208, 231, 1);
+  --dropbox-lonelyplanet_logo: rgba(13, 36, 129, 1);
+  --dropbox-clearchannel_logo: rgba(255, 216, 48, 1);
 }
 
 /* #endregion Utilities */
@@ -20,6 +27,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
+  font-size: 1.1rem;
 }
 
 h1 {
@@ -27,12 +35,14 @@ h1 {
   font-weight: 800;
 }
 
-img {
-  max-width: 100%;
+h2 {
+  font-size: 2.25rem;
+  padding-bottom: 4rem;
+  ;
 }
 
-a {
-  text-decoration: none;
+img {
+  max-width: 100%;
 }
 
 /* #region Flex rules */
@@ -119,6 +129,7 @@ a {
 }
 
 .links a {
+  text-decoration: none;
   color: var(--dropbox-dark);
 }
 
@@ -130,6 +141,13 @@ a {
   cursor: pointer;
 }
 
+[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+input[type="radio"]+label {
+  padding-right: 4rem;
+}
 
 /* #endregion Common rules */
 
@@ -149,6 +167,10 @@ a {
 
 .section_510px {
   height: 510px;
+}
+
+.section_639px {
+  height: 639px;
 }
 
 .section_680px {
@@ -191,9 +213,47 @@ a {
   background-color: lightyellow;
 }
 
+.logo_right div,
+.logo_left div {
+  flex-basis: 50%;
+}
+
+.designit_logo {
+  background-color: var(--dropbox-designit_logo);
+}
+
+.asu_logo {
+  background-color: var(--dropbox-asu_logo);
+}
+
+.uf_logo {
+  background-color: var(--dropbox-uf_logo);
+}
+
+.topps_logo {
+  background-color: var(--dropbox-topps_logo);
+}
+
+.wbr_logo {
+  background-color: var(--dropbox-wbr_logo);
+}
+
+.hearst_logo {
+  background-color: var(--dropbox-hearst_logo);
+}
+
+.lonelyplanet_logo {
+  background-color: var(--dropbox-lonelyplanet_logo);
+}
+
+.clearchannel_logo {
+  background-color: var(--dropbox-clearchannel_logo);
+}
+
 /* #endregion Debug */
 
 /* #region Header */
+
 /* #endregion Header */
 
 /* #region Main */
@@ -205,6 +265,14 @@ a {
 
 /* #endregion Banner */
 
+/* #region Business plan */
+
+.radio_buttons {
+  padding-bottom: 4rem;
+}
+
+/* #endregion Business plan */
+
 /* #region Sales office */
 .team_icon {
   text-align: center;
@@ -212,6 +280,30 @@ a {
 }
 
 /* #endregion Sales office */
+
+/* #region Customers title */
+
+.container_small.customers_title {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+/* #endregion Customers title */
+
+/* #region Customers logo */
+
+.logo_right,
+.logo_center,
+.logo_left {
+  width: calc(100% / 3);
+}
+
+.customers_logo img {
+  color: var();
+  width: 50%;
+}
+
+/* #endregion Customers logo */
 
 /* #endregion Main */
 
