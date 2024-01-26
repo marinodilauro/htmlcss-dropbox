@@ -413,11 +413,19 @@ input[type="radio"]+label {
 
 /* #region Customers title */
 .container_small.customers_title {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 9rem;
 }
 
 /* #endregion Customers title */
+
+/* #region Dropbox business */
+
+.dropbox_business h3 {
+  padding-bottom: 2rem;
+}
+
+/* #endregion Dropbox business */
 
 /* #region Customers logo */
 .logo_right,
