@@ -130,6 +130,31 @@ img {
   margin-right: -1rem;
 }
 
+.container_2 {
+  width: calc((100% / 12) * 2.4);
+}
+
+.container_3 {
+  width: calc((100% / 12) * 3);
+}
+
+.container_4 {
+  width: calc((100% / 12) * 4);
+  padding: 1rem;
+}
+
+.container_8 {
+  width: calc((100% / 12) * 8);
+}
+
+.dropbox_partner .container_8 {
+  height: 540px;
+}
+
+.container_9 {
+  width: calc((100% / 12) * 9);
+}
+
 .padding_top_bottom {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -200,64 +225,11 @@ input[type="radio"]+label {
 
 /* #endregion Common rules */
 
-/* #region Debug */
+/* #region Header */
 
 #site_header {
   height: 85px;
 }
-
-.section_510px {
-  height: 510px;
-}
-
-.section_639px {
-  height: 639px;
-}
-
-.section_680px {
-  height: 680px;
-}
-
-.section_850px {
-  height: 850px;
-}
-
-.section_1700px {
-  height: 1700px;
-}
-
-.container_2 {
-  width: calc((100% / 12) * 2.4);
-}
-
-.container_3 {
-  width: calc((100% / 12) * 3);
-  background-color: lightslategray;
-}
-
-.container_4 {
-  width: calc((100% / 12) * 4);
-  padding: 1rem;
-  background-color: lightblue;
-}
-
-.container_8 {
-  width: calc((100% / 12) * 8);
-  background-color: lightyellow;
-}
-
-.dropbox_partner .container_8 {
-  height: 540px;
-}
-
-.container_9 {
-  width: calc((100% / 12) * 9);
-  background-color: lightcoral;
-}
-
-/* #endregion Debug */
-
-/* #region Header */
 
 #site_header .links {
   justify-content: space-around;
@@ -269,27 +241,28 @@ input[type="radio"]+label {
 
 /* #region Banner */
 .banner {
+  height: 730px;
 
-  & .row {
-    padding-top: 3rem;
+  .row {
+    padding-top: 1rem;
   }
 
-  & .container_medium {
+  .container_medium {
     padding-bottom: 0;
 
   }
 
-  & .container_4 {
+  .container_4 {
     align-items: flex-start;
     gap: 2rem;
   }
 
-  & .arrow_icon {
+  .arrow_icon {
     font-size: 2rem;
-    padding-top: 2.5rem;
+    padding-top: 3.5rem;
   }
 
-  & img {
+  img {
     padding-top: 3rem;
   }
 }
@@ -373,6 +346,10 @@ input[type="radio"]+label {
 
   .team_icon {
     border-style: solid solid none solid;
+  }
+
+  .container_4 {
+    border-style: solid solid solid none;
   }
 
   h3 {
