@@ -392,6 +392,25 @@ input[type="radio"]+label {
 
 /* #endregion Sales office */
 
+/* #region Dropbox partner */
+
+.dropbox_partner .container_4 {
+  h3 {
+    padding-bottom: 1rem;
+  }
+
+  p {
+    padding-bottom: 2rem;
+  }
+
+  .btn {
+    border: 1px solid;
+    align-self: flex-start;
+  }
+}
+
+/* #endregion Dropbox partner */
+
 /* #region Customers title */
 .container_small.customers_title {
   padding-top: 10rem;
