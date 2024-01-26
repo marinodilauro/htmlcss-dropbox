@@ -41,6 +41,10 @@ h2 {
   padding-bottom: 4rem;
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
 img {
   max-width: 100%;
 }
@@ -137,6 +141,20 @@ img {
   cursor: pointer;
 }
 
+.btn_lighter {
+  background-color: var(--dropbox-lighter);
+  color: var(--dropbox-dark);
+}
+
+.btn_accent {
+  background-color: var(--dropbox-accent);
+  color: var(--dropbox-lighter);
+}
+
+.btn_large {
+  padding: 0.5rem 2rem;
+}
+
 [type="radio"] {
   margin-right: 0.5rem;
 }
@@ -178,10 +196,6 @@ input[type="radio"]+label {
   height: 85px;
 }
 
-#site_main * {
-  border: 1px dashed;
-}
-
 .section_510px {
   height: 510px;
 }
@@ -214,7 +228,6 @@ input[type="radio"]+label {
 
 .container_4 {
   width: calc((100% / 12) * 4);
-  height: 425px;
   background-color: lightblue;
 }
 
@@ -240,12 +253,6 @@ input[type="radio"]+label {
 
 #site_header .links {
   justify-content: space-around;
-}
-
-
-.header_left .btn {
-  background-color: var(--dropbox-accent);
-  color: var(--dropbox-lighter);
 }
 
 /* #endregion Header */
@@ -279,11 +286,6 @@ input[type="radio"]+label {
   }
 }
 
-.banner .btn {
-  background-color: var(--dropbox-accent);
-  color: var(--dropbox-lighter);
-}
-
 /* #endregion Banner */
 
 /* #region Business plan */
@@ -291,8 +293,40 @@ input[type="radio"]+label {
   padding-top: 10rem;
 }
 
+.plan_type,
+.account_type {
+  border: 1px solid grey;
+}
+
+.account_type {
+  border-style: solid solid none solid;
+}
+
 .radio_buttons {
   padding-bottom: 4rem;
+}
+
+.account_type {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.plan_type {
+  align-items: flex-start;
+  padding: 2rem 1.5rem 10rem 1.5rem;
+  justify-content: baseline;
+
+  & ul {
+    list-style: none;
+
+    & li:not(:last-child) {
+      padding-bottom: 2rem;
+    }
+  }
+
+  & hr {
+    width: 20%;
+  }
 }
 
 /* #endregion Business plan */
@@ -370,8 +404,6 @@ input[type="radio"]+label {
 }
 
 .free_trial .btn {
-  background-color: var(--dropbox-lighter);
-  color: var(--dropbox-dark);
   padding: 0.7rem 3rem;
 }
 
