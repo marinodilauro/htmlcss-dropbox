@@ -28,7 +28,6 @@
 
 body * {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
 }
 
 h1 {
@@ -43,6 +42,10 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+}
+
+h4 {
+  padding-top: 1rem;
 }
 
 img {
@@ -73,7 +76,7 @@ img {
 
 .flex_space_around {
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
 }
 
 .flex_space_between {
@@ -120,6 +123,11 @@ img {
   margin: auto;
 }
 
+.row {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
 .padding_top_bottom {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -152,7 +160,7 @@ img {
 }
 
 .btn_large {
-  padding: 0.5rem 2rem;
+  padding: 0.7rem 3.1rem;
 }
 
 [type="radio"] {
@@ -222,18 +230,17 @@ input[type="radio"]+label {
 
 .container_3 {
   width: calc((100% / 12) * 3);
-  height: 425px;
   background-color: lightslategray;
 }
 
 .container_4 {
   width: calc((100% / 12) * 4);
+  padding: 1rem;
   background-color: lightblue;
 }
 
 .container_8 {
   width: calc((100% / 12) * 8);
-  height: 425px;
   background-color: lightyellow;
 }
 
@@ -243,7 +250,6 @@ input[type="radio"]+label {
 
 .container_9 {
   width: calc((100% / 12) * 9);
-  height: 425px;
   background-color: lightcoral;
 }
 
@@ -313,20 +319,38 @@ input[type="radio"]+label {
 
 .plan_type {
   align-items: flex-start;
-  padding: 2rem 1.5rem 10rem 1.5rem;
-  justify-content: baseline;
+  padding: 2rem 1.5rem 12rem 1.5rem;
+  gap: 2.5rem;
 
-  & ul {
+  ul {
     list-style: none;
 
-    & li:not(:last-child) {
-      padding-bottom: 2rem;
+    li:not(:last-child) {
+      padding-bottom: 1rem;
     }
   }
 
-  & hr {
+  hr {
     width: 20%;
   }
+
+  .btn_large {
+    padding: 0.7rem 1.7rem;
+  }
+}
+
+.container_4:nth-child(2) .plan_type {
+  padding-bottom: 2rem;
+}
+
+.plan_specs,
+.plan_highlights {
+  margin-left: 1.5rem;
+}
+
+
+.plan_highlights .fa-li {
+  color: var(--dropbox-accent);
 }
 
 /* #endregion Business plan */
@@ -335,6 +359,35 @@ input[type="radio"]+label {
 .team_icon {
   text-align: center;
   padding: 0.7rem 0;
+}
+
+.sales_office {
+
+  .team_icon,
+  .container_4,
+  .container_8 {
+    border: 1px solid grey;
+  }
+
+  .team_icon {
+    border-style: solid solid none solid;
+  }
+
+  h3 {
+    padding-bottom: 1rem;
+  }
+
+  p:nth-child(2) {
+    padding-bottom: 3rem;
+  }
+
+  .container_8 {
+    padding: 2rem;
+  }
+
+  .container_4 {
+    padding-top: 2rem;
+  }
 }
 
 /* #endregion Sales office */

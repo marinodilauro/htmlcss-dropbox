@@ -82,13 +82,15 @@
         <input type="radio" id="annual" name="payment_plan" value="Fatturazione annuale">
         <label for="annual">Fatturazione annuale</label><br>
       </div>
-      <div class="row d_flex flex_space_between flex_wrap">
+      <div class="row d_flex flex_wrap">
+
+        <!-- Professional plan -->
         <div class="container_4">
           <div class="account_type">
             <i class="fa-solid fa-user"></i>
             <span>Singolo</span>
           </div>
-          <div class="plan_type d_flex flex_column flex_spacing">
+          <div class="plan_type d_flex flex_column">
             <ul class="plan_price">
               <li>
                 <h3>Professional</h3>
@@ -96,46 +98,125 @@
               <li><strong>&euro; 12.00</strong></li>
               <li>/mese</li>
             </ul>
-            <ul class="plan_specs">
-              <li>
-                <i class="fa-solid fa-user"></i>
-                <span>1 utente</span>
+            <ul class="fa-ul plan_specs">
+              <li><span class="fa-li"><i class="fa-solid fa-user"></i></span>1 utente</li>
+              <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span>5 TB di spazio di archiviazione sicuro
               </li>
-              <li>
-                <i class="fa-solid fa-folder"></i>
-                <span>5 TB di spazio di archiviazione sicuro</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-share-nodes"></i>
-                <span>Funzioni e produttivit&agrave; premium e condivisione file semplice e sicura</span>
-              </li>
+              <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>Funzioni e produttivit&agrave;
+                premium e condivisione file semplice e sicura</li>
             </ul>
             <button class="btn btn_accent btn_large" type="button" onclick="alert('Hello world!')">Prova gratis per 30
               giorni</button>
             <span>oppure <a href="#">acquista ora</a></span>
             <hr>
-            <ul class="plan_highlights">
-              <li>Punti salienti del piano</li>
-              <li>Invia file fino a 100 GB con Dropbox Transfert</li>
-              <li>Cartelle offline su dispositivi mobili</li>
+            <h4>Punti salienti delpiano</h4>
+            <ul class="fa-ul plan_highlights">
+              <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Invia file fino a 100 GB con Dropbox
+                Transfert</li>
+              <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Cartelle offline su dispositivi mobili
+              </li>
             </ul>
           </div>
         </div>
 
+        <!-- Advanced plan -->
+        <div class="container_4">
+          <div class="account_type">
+            <i class="fa-solid fa-users"></i>
+            <span>Team</span>
+          </div>
+          <div class="plan_type d_flex flex_column">
+            <ul class="plan_price">
+              <li>
+                <h3>Advanced</h3>
+              </li>
+              <li><strong>&euro; 18.00</strong></li>
+              <li>/utente/mese</li>
+            </ul>
+            <ul class="fa-ul plan_specs">
+              <li><span class="fa-li"><i class="fa-solid fa-users"></i></i></span>3 o pi&ugrave; utenti</li>
+              <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span>Tutto lo spazio di cui ha bisogno il tuo
+                team</li>
+              <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>Sofisticate funzioni di controllo e
+                per tenere al sicuro tutti i file del tuo team</li>
+            </ul>
+            <button class="btn btn_accent btn_large" type="button" onclick="alert('Hello world!')">Prova gratis per 30
+              giorni</button>
+            <span>oppure <a href="#">acquista ora</a></span>
+            <hr>
+            <h4>Punti salienti delpiano</h4>
+            <ul class="fa-ul plan_highlights">
+              <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Nessun limite di spazio per i file
+              </li>
+              <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Cartelle offline su dispositivi mobili
+              </li>
+              <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Risparmio del 50% rispetto alle
+                iscrizioni singole</li>
+              <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Possibilit&agrave; di inserire nuovi
+                membri del team</li>
+              <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Gestione dei permessi in base ai ruoli
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Enterprise plan -->
+        <div class="container_4">
+          <div class="account_type">
+            <i class="fa-solid fa-user"></i>
+            <span>Singolo</span>
+          </div>
+          <div class="plan_type d_flex flex_column">
+            <ul class="plan_price">
+              <li>
+                <h3>Professional</h3>
+              </li>
+              <li><strong>&euro; 12.00</strong></li>
+              <li>/mese</li>
+            </ul>
+            <ul class="fa-ul plan_specs">
+              <li><span class="fa-li"><i class="fa-solid fa-user"></i></span>1 utente</li>
+              <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span>5 TB di spazio di archiviazione sicuro
+              </li>
+              <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>Funzioni e produttivit&agrave;
+                premium e condivisione file semplice e sicura</li>
+            </ul>
+            <button class="btn btn_accent btn_large" type="button" onclick="alert('Hello world!')">Prova gratis per 30
+              giorni</button>
+            <span>oppure <a href="#">acquista ora</a></span>
+            <hr>
+            <h4>Punti salienti delpiano</h4>
+            <ul class="fa-ul plan_highlights">
+              </li>
+              <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Invia file fino a 100 GB con Dropbox
+                Transfert</li>
+              <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Cartelle offline su dispositivi mobili
+              </li>
+            </ul>
+          </div>
+        </div>
 
       </div>
     </section>
 
 
     <!-- Sales office -->
-    <div class="container_small padding_top_bottom d_flex flex_column">
+    <div class="container_small sales_office padding_top_bottom d_flex flex_column">
       <div class="team_icon">
         <i class="fa-solid fa-building"></i>
         <span>Team</span>
       </div>
-      <div class="sales_office d_flex">
-        <div class="container_9"></div>
-        <div class="container_3"></div>
+      <div class=" d_flex ">
+        <div class="container_8 d_flex flex_column">
+          <h3>Enterprise</h3>
+          <p><strong>Contatta l'ufficio vendite per i prezzi</strong></p>
+          <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi
+            scala.</p>
+        </div>
+        <div class="container_4">
+          <button class="btn btn_accent btn_large" type="button" onclick="alert('Hello world!')">Contatta l'ufficio
+            vendite</button>
+        </div>
       </div>
     </div>
 
