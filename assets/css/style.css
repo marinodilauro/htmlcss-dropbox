@@ -12,6 +12,7 @@
   --dropbox-lighter: rgba(255, 255, 255, 1);
   --dropbox-accent: rgba(0, 97, 255, 1);
   --dropbox-free_trial_font: rgba(97, 8, 43, 1);
+  --dropbox-center_logo_bg: rgba(245, 245, 245, 1);
   --dropbox-designit_logo: rgba(162, 211, 155, 1);
   --dropbox-asu_logo: rgba(97, 8, 43, 1);
   --dropbox-uf_logo: rgba(0, 147, 206, 1);
@@ -20,6 +21,7 @@
   --dropbox-hearst_logo: rgba(180, 208, 231, 1);
   --dropbox-lonelyplanet_logo: rgba(13, 36, 129, 1);
   --dropbox-clearchannel_logo: rgba(255, 216, 48, 1);
+  --dropbox-hover-logo-border: rgba(255, 255, 255, 0.1);
 }
 
 /* #endregion Utilities */
@@ -434,14 +436,26 @@ input[type="radio"]+label {
   width: calc(100% / 3);
 }
 
-.customers_logo img {
-  color: var();
+.logo_left img,
+.logo_right img {
+  filter: invert(1);
   width: 50%;
 }
 
 .logo_right div,
 .logo_left div {
   flex-basis: 50%;
+  height: 50%;
+}
+
+.logo_center {
+  padding: 4rem;
+  background-color: var(--dropbox-center_logo_bg);
+
+  hr {
+    color: grey;
+    width: 20%;
+  }
 }
 
 .designit_logo {
@@ -474,6 +488,11 @@ input[type="radio"]+label {
 
 .clearchannel_logo {
   background-color: var(--dropbox-clearchannel_logo);
+}
+
+.logo_right div:hover,
+.logo_left div:hover {
+  border: 1rem solid var(--dropbox-hover-logo-border);
 }
 
 /* #endregion Customers logo */
