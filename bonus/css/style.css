@@ -266,12 +266,11 @@ input[type="radio"]+label {
   text-decoration: underline;
 }
 
+a:hover~.rect {
+  display: inline;
+}
+
 /* #endregion Hover functions */
-
-/* #region Animations */
-
-
-/* #endregion Animations */
 
 /* #region Header */
 
@@ -294,9 +293,20 @@ input[type="radio"]+label {
   }
 }
 
+.rect {
+  width: 200px;
+  height: 300px;
+  background-color: grey;
+  display: none;
+}
+
 /* #endregion Header */
 
 /* #region Main */
+
+#site_main {
+  padding-top: 0.1px;
+}
 
 /* #region Banner */
 .banner {
