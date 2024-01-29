@@ -167,7 +167,7 @@ input[type="radio"]+label {
   padding-right: 4rem;
 }
 
-.accordion {
+.faq_question {
   background-color: var(--dropbox-lighter);
   color: var(--dropbox-dark);
   font-weight: bold;
@@ -189,6 +189,7 @@ input[type="radio"]+label {
   padding: 0 2rem;
   display: none;
   overflow: hidden;
+  transition: all 300ms;
 }
 
 /* #region Flex rules */
@@ -250,6 +251,15 @@ input[type="radio"]+label {
 #site_header .links li:hover {
   background-color: var(--dropbox-hover-menu-bg);
   cursor: pointer;
+}
+
+.faq:hover .faq_answer {
+  display: inline;
+
+}
+
+.faq:hover .fa-chevron-down:before {
+  content: "\f077";
 }
 
 /* #endregion Hover functions */
