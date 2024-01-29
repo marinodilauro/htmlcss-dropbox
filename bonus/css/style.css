@@ -29,6 +29,10 @@
 
 /* #region Common rules */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   min-width: 1400px;
@@ -305,6 +309,10 @@ input[type="radio"]+label {
   img {
     padding-top: 3rem;
   }
+
+  a {
+    color: var(--dropbox-dark);
+  }
 }
 
 /* #endregion Banner */
@@ -413,7 +421,6 @@ input[type="radio"]+label {
 /* #endregion Sales office */
 
 /* #region Dropbox partner */
-
 .dropbox_partner .container_4 {
 
   h3 {
@@ -443,7 +450,6 @@ input[type="radio"]+label {
 /* #endregion Customers title */
 
 /* #region Dropbox business */
-
 .dropbox_business h3 {
   padding-bottom: 2rem;
 }
