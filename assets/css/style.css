@@ -242,6 +242,12 @@ input[type="radio"]+label {
   box-shadow: -5px 5px 5px var(--dropbox-dark);
 }
 
+.header_right li:hover,
+.header_left li:hover {
+  border: 2px var(--dropbox-dark);
+  border-style: none none solid none;
+}
+
 /* #endregion Hover functions */
 
 /* #region Animations */
@@ -253,6 +259,11 @@ input[type="radio"]+label {
 
 #site_header {
   height: 85px;
+
+  li {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   .links {
     justify-content: space-around;
