@@ -55,43 +55,6 @@ img {
   max-width: 100%;
 }
 
-/* #region Flex rules */
-.d_flex {
-  display: flex;
-}
-
-.flex_wrap {
-  flex-wrap: wrap;
-}
-
-.flex_column {
-  flex-direction: column;
-}
-
-.flex_mirror {
-  flex-direction: row-reverse;
-}
-
-.flex_items_center {
-  justify-content: center;
-  align-items: center;
-}
-
-.flex_space_around {
-  justify-content: space-around;
-  align-items: start;
-}
-
-.flex_space_between {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flex_spacing {
-  gap: 3rem;
-}
-
-/* #endregion Flex rules */
 
 .background {
   width: 100%;
@@ -223,8 +186,68 @@ input[type="radio"]+label {
   overflow: hidden;
 }
 
+/* #region Flex rules */
+.d_flex {
+  display: flex;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+.flex_mirror {
+  flex-direction: row-reverse;
+}
+
+.flex_items_center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_space_around {
+  justify-content: space-around;
+  align-items: start;
+}
+
+.flex_space_between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_spacing {
+  gap: 3rem;
+}
+
+/* #endregion Flex rules */
 
 /* #endregion Common rules */
+
+/* #region Hover functions */
+
+.logo_right div:hover,
+.logo_left div:hover {
+  box-shadow: inset 0 0 0 15px var(--dropbox-hover-logo-border);
+}
+
+.btn:hover {
+  filter: opacity(0.9)
+}
+
+.dropbox_partner .btn:hover {
+  filter: opacity(1);
+  box-shadow: -5px 5px 5px var(--dropbox-dark);
+}
+
+/* #endregion Hover functions */
+
+/* #region Animations */
+
+
+/* #endregion Animations */
 
 /* #region Header */
 
@@ -384,6 +407,7 @@ input[type="radio"]+label {
 /* #region Dropbox partner */
 
 .dropbox_partner .container_4 {
+
   h3 {
     padding-bottom: 1rem;
   }
@@ -393,8 +417,10 @@ input[type="radio"]+label {
   }
 
   .btn {
+    position: relative;
     border: 1px solid;
     align-self: flex-start;
+    transition: all 200ms;
   }
 }
 
@@ -433,6 +459,7 @@ input[type="radio"]+label {
 .logo_left div {
   flex-basis: 50%;
   height: 50%;
+  transition: box-shadow 200ms;
 }
 
 .logo_center {
@@ -475,11 +502,6 @@ input[type="radio"]+label {
 
 .clearchannel_logo {
   background-color: var(--dropbox-clearchannel_logo);
-}
-
-.logo_right div:hover,
-.logo_left div:hover {
-  box-shadow: inset 0 0 0 15px var(--dropbox-hover-logo-border);
 }
 
 /* #endregion Customers logo */
