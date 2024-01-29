@@ -262,6 +262,9 @@ input[type="radio"]+label {
   content: "\f077";
 }
 
+.asu_logo~.asu_card {
+  display: inline;
+}
 
 /* #endregion Hover functions */
 
@@ -528,6 +531,10 @@ input[type="radio"]+label {
 
 .clearchannel_logo {
   background-color: var(--dropbox-clearchannel_logo);
+}
+
+.asu_card {
+  display: none;
 }
 
 /* #endregion Customers logo */
