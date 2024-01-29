@@ -21,15 +21,16 @@
   --dropbox-hearst_logo: rgba(180, 208, 231, 1);
   --dropbox-lonelyplanet_logo: rgba(13, 36, 129, 1);
   --dropbox-clearchannel_logo: rgba(255, 216, 48, 1);
-  --dropbox-hover-logo-border: rgba(255, 255, 255, 0.1);
+  --dropbox-hover-logo-border: rgba(255, 255, 255, 0.2);
 }
 
 /* #endregion Utilities */
 
 /* #region Common rules */
 
-body * {
+body {
   font-family: 'Open Sans', sans-serif;
+  min-width: 1400px;
 }
 
 h1 {
@@ -172,7 +173,7 @@ img {
 .btn {
   border: none;
   font-size: 1.1rem;
-  padding: 0.4rem 0.8rem;
+  padding: 0.7rem 0.9rem;
   cursor: pointer;
 }
 
@@ -229,11 +230,19 @@ input[type="radio"]+label {
 
 #site_header {
   height: 85px;
+
+  .links {
+    justify-content: space-around;
+  }
+
+  .btn {
+    padding: 0.5rem 0.9rem;
+  }
 }
 
-#site_header .links {
+/* #site_header .links {
   justify-content: space-around;
-}
+} */
 
 /* #endregion Header */
 
@@ -294,7 +303,8 @@ input[type="radio"]+label {
 
 .plan_type {
   align-items: flex-start;
-  padding: 2rem 1.5rem 12rem 1.5rem;
+  height: 950px;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   gap: 2.5rem;
 
   ul {
@@ -469,7 +479,7 @@ input[type="radio"]+label {
 
 .logo_right div:hover,
 .logo_left div:hover {
-  border: 1rem solid var(--dropbox-hover-logo-border);
+  box-shadow: inset 0 0 0 15px var(--dropbox-hover-logo-border);
 }
 
 /* #endregion Customers logo */
