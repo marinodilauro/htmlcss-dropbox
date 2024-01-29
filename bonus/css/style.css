@@ -1,0 +1,569 @@
+/* #region Utilities */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dropbox-dark: rgba(0, 0, 0, 1);
+  --dropbox-light: rgba(180, 208, 231, 1);
+  --dropbox-lighter: rgba(255, 255, 255, 1);
+  --dropbox-accent: rgba(0, 97, 255, 1);
+  --dropbox-free_trial_font: rgba(97, 8, 43, 1);
+  --dropbox-center_logo_bg: rgba(245, 245, 245, 1);
+  --dropbox-designit_logo: rgba(162, 211, 155, 1);
+  --dropbox-asu_logo: rgba(97, 8, 43, 1);
+  --dropbox-uf_logo: rgba(0, 147, 206, 1);
+  --dropbox-topps_logo: rgba(255, 28, 28, 1);
+  --dropbox-wbr_logo: rgba(213, 0, 31, 1);
+  --dropbox-hearst_logo: rgba(180, 208, 231, 1);
+  --dropbox-lonelyplanet_logo: rgba(13, 36, 129, 1);
+  --dropbox-clearchannel_logo: rgba(255, 216, 48, 1);
+  --dropbox-hover-logo-border: rgba(255, 255, 255, 0.2);
+  --dropbox-hover-menu-bg: rgba(170, 170, 170, 0.4);
+}
+
+/* #endregion Utilities */
+
+/* #region Common rules */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-width: 1400px;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2.25rem;
+  padding-bottom: 4rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  padding-top: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.background {
+  width: 100%;
+}
+
+.bg_color_dark {
+  background-color: var(--dropbox-dark);
+  color: var(--dropbox-lighter);
+}
+
+.bg_color_light {
+  background-color: var(--dropbox-light);
+}
+
+.bg_color_lighter {
+  background-color: var(--dropbox-lighter);
+}
+
+.container_large {
+  width: 98%;
+  max-width: 1900px;
+  margin: auto;
+}
+
+.container_medium {
+  width: 1200px;
+  margin: auto;
+}
+
+.container_small {
+  width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.container_2 {
+  width: calc((100% / 12) * 2.4);
+}
+
+.container_3 {
+  width: calc((100% / 12) * 3);
+}
+
+.container_4 {
+  width: calc((100% / 12) * 4);
+  padding: 1rem;
+}
+
+.container_8 {
+  width: calc((100% / 12) * 8);
+}
+
+.dropbox_partner .container_8 {
+  height: 540px;
+}
+
+.container_9 {
+  width: calc((100% / 12) * 9);
+}
+
+.padding_top_bottom {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.links {
+  list-style: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--dropbox-dark);
+}
+
+.btn {
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+}
+
+.btn_lighter {
+  background-color: var(--dropbox-lighter);
+  color: var(--dropbox-dark);
+}
+
+.btn_accent {
+  background-color: var(--dropbox-accent);
+  color: var(--dropbox-lighter);
+}
+
+.btn_large {
+  padding: 0.7rem 3.1rem;
+}
+
+[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+input[type="radio"]+label {
+  padding-right: 4rem;
+}
+
+.accordion {
+  background-color: var(--dropbox-lighter);
+  color: var(--dropbox-dark);
+  font-weight: bold;
+  padding: 2rem 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  transition: 0.4s;
+}
+
+.fa-chevron-down {
+  padding-right: 2rem;
+}
+
+.faq_answer {
+  background-color: var(--dropbox-lighter);
+  color: var(--dropbox-dark);
+  padding: 0 2rem;
+  display: none;
+  overflow: hidden;
+}
+
+/* #region Flex rules */
+.d_flex {
+  display: flex;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+.flex_mirror {
+  flex-direction: row-reverse;
+}
+
+.flex_items_center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_space_around {
+  justify-content: space-around;
+  align-items: start;
+}
+
+.flex_space_between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_spacing {
+  gap: 3rem;
+}
+
+/* #endregion Flex rules */
+
+/* #endregion Common rules */
+
+/* #region Hover functions */
+
+.logo_right div:hover,
+.logo_left div:hover {
+  box-shadow: inset 0 0 0 15px var(--dropbox-hover-logo-border);
+}
+
+.btn:hover {
+  filter: opacity(0.9)
+}
+
+.dropbox_partner .btn:hover {
+  filter: opacity(1);
+  box-shadow: -5px 5px 5px var(--dropbox-dark);
+}
+
+#site_header .links li:hover {
+  background-color: var(--dropbox-hover-menu-bg);
+  cursor: pointer;
+}
+
+/* #endregion Hover functions */
+
+/* #region Animations */
+
+
+/* #endregion Animations */
+
+/* #region Header */
+
+#site_header {
+
+
+  li {
+    padding: 17px 10px 17px 10px;
+    transition: all 200ms;
+  }
+
+  .links {
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .btn {
+    padding: 0.5rem 0.9rem;
+  }
+}
+
+/* #endregion Header */
+
+/* #region Main */
+
+/* #region Banner */
+.banner {
+  height: 730px;
+
+  .row {
+    padding-top: 1rem;
+  }
+
+  .container_medium {
+    padding-bottom: 0;
+
+  }
+
+  .container_4 {
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .arrow_icon {
+    font-size: 2rem;
+    padding-top: 3.5rem;
+  }
+
+  img {
+    padding-top: 3rem;
+  }
+}
+
+/* #endregion Banner */
+
+/* #region Business plan */
+.banner+.container_small {
+  padding-top: 10rem;
+}
+
+.plan_type,
+.account_type {
+  border: 1px solid grey;
+}
+
+.account_type {
+  border-style: solid solid none solid;
+}
+
+.radio_buttons {
+  padding-bottom: 2rem;
+}
+
+.account_type {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.plan_type {
+  align-items: flex-start;
+  height: 950px;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  gap: 2.5rem;
+
+  ul {
+    list-style: none;
+
+    li:not(:last-child) {
+      padding-bottom: 1rem;
+    }
+  }
+
+  hr {
+    width: 20%;
+  }
+
+  .btn_large {
+    padding: 0.7rem 1.7rem;
+  }
+}
+
+.container_4:nth-child(2) .plan_type {
+  padding-bottom: 2rem;
+}
+
+.plan_specs,
+.plan_highlights {
+  margin-left: 1.5rem;
+}
+
+
+.plan_highlights .fa-li {
+  color: var(--dropbox-accent);
+}
+
+/* #endregion Business plan */
+
+/* #region Sales office */
+.team_icon {
+  text-align: center;
+  padding: 0.7rem 0;
+}
+
+.sales_office {
+
+  .team_icon,
+  .container_4,
+  .container_8 {
+    border: 1px solid grey;
+  }
+
+  .team_icon {
+    border-style: solid solid none solid;
+  }
+
+  .container_4 {
+    border-style: solid solid solid none;
+  }
+
+  h3 {
+    padding-bottom: 1rem;
+  }
+
+  p:nth-child(2) {
+    padding-bottom: 3rem;
+  }
+
+  .container_8 {
+    padding: 2rem;
+  }
+
+  .container_4 {
+    padding-top: 2rem;
+  }
+}
+
+/* #endregion Sales office */
+
+/* #region Dropbox partner */
+
+.dropbox_partner .container_4 {
+
+  h3 {
+    padding-bottom: 1rem;
+  }
+
+  p {
+    padding-bottom: 2rem;
+  }
+
+  .btn {
+    position: relative;
+    border: 1px solid;
+    align-self: flex-start;
+    transition: all 200ms;
+  }
+}
+
+/* #endregion Dropbox partner */
+
+/* #region Customers title */
+.container_small.customers_title {
+  padding-top: 5rem;
+  padding-bottom: 9rem;
+}
+
+/* #endregion Customers title */
+
+/* #region Dropbox business */
+
+.dropbox_business h3 {
+  padding-bottom: 2rem;
+}
+
+/* #endregion Dropbox business */
+
+/* #region Customers logo */
+.logo_right,
+.logo_center,
+.logo_left {
+  width: calc(100% / 3);
+}
+
+.logo_left img,
+.logo_right img {
+  filter: invert(1);
+  width: 50%;
+}
+
+.logo_right div,
+.logo_left div {
+  flex-basis: 50%;
+  height: 50%;
+  transition: box-shadow 200ms;
+}
+
+.logo_center {
+  padding: 4rem;
+  background-color: var(--dropbox-center_logo_bg);
+
+  hr {
+    color: grey;
+    width: 20%;
+  }
+}
+
+.designit_logo {
+  background-color: var(--dropbox-designit_logo);
+}
+
+.asu_logo {
+  background-color: var(--dropbox-asu_logo);
+}
+
+.uf_logo {
+  background-color: var(--dropbox-uf_logo);
+}
+
+.topps_logo {
+  background-color: var(--dropbox-topps_logo);
+}
+
+.wbr_logo {
+  background-color: var(--dropbox-wbr_logo);
+}
+
+.hearst_logo {
+  background-color: var(--dropbox-hearst_logo);
+}
+
+.lonelyplanet_logo {
+  background-color: var(--dropbox-lonelyplanet_logo);
+}
+
+.clearchannel_logo {
+  background-color: var(--dropbox-clearchannel_logo);
+}
+
+/* #endregion Customers logo */
+
+/* #region Free trial */
+.free_trial h2 {
+  color: var(--dropbox-free_trial_font);
+}
+
+.free_trial .btn {
+  padding: 0.7rem 3rem;
+}
+
+/* #endregion Free trial */
+
+/* #region FAQ */
+
+/* #endregion FAQ */
+
+/* #endregion Main */
+
+/* #region Footer */
+
+#site_footer .container_medium {
+  padding-top: 6rem;
+}
+
+.footer_top {
+  padding-bottom: 6rem;
+}
+
+.footer_top .links li {
+  color: var(--dropbox-lighter);
+  padding-bottom: 1rem;
+}
+
+.footer_top .links a {
+  color: var(--dropbox-lighter);
+}
+
+.footer_top li:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.footer_top+hr {
+  width: 10%;
+}
+
+.site_language {
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 3rem 0;
+}
+
+/* #endregion Footer */
