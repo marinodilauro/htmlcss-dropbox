@@ -22,6 +22,7 @@
   --dropbox-lonelyplanet_logo: rgba(13, 36, 129, 1);
   --dropbox-clearchannel_logo: rgba(255, 216, 48, 1);
   --dropbox-hover-logo-border: rgba(255, 255, 255, 0.2);
+  --dropbox-hover-menu-bg: rgba(170, 170, 170, 0.4);
 }
 
 /* #endregion Utilities */
@@ -242,10 +243,9 @@ input[type="radio"]+label {
   box-shadow: -5px 5px 5px var(--dropbox-dark);
 }
 
-.header_right li:hover,
-.header_left li:hover {
-  border: 2px var(--dropbox-dark);
-  border-style: none none solid none;
+#site_header .links li:hover {
+  background-color: var(--dropbox-hover-menu-bg);
+  cursor: pointer;
 }
 
 /* #endregion Hover functions */
@@ -258,15 +258,16 @@ input[type="radio"]+label {
 /* #region Header */
 
 #site_header {
-  height: 85px;
+
 
   li {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 17px 10px 17px 10px;
+    transition: all 200ms;
   }
 
   .links {
     justify-content: space-around;
+    gap: 0;
   }
 
   .btn {
